@@ -17,6 +17,8 @@ def main(s: str, top: int, longest_n: int) -> None:
         ranking = list(analyze_ngram(s, n))
         ranking.sort(key=lambda x: -x[1])
 
+        ranking = list(filter(lambda x: x[1] != 1, ranking))
+
         print(f'{n}-gramy:')
         print(*ranking[:top], sep='\n')
         print()
