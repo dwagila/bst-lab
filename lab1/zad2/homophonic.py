@@ -7,8 +7,6 @@ from math import ceil, floor
 language_characteristic = list[tuple[str, float]]
 alphabet = list[str]
 
-# nie mylić z homophobic cipher
-# to inny szyfr
 class HomophonicCipher:
 
     plaintext_characteristic: language_characteristic
